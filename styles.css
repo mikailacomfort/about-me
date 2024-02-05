@@ -57,14 +57,15 @@ body {
   display: grid;
   grid-gap: 20px;
   grid-template-areas:
-    "main main box1"
-    "main main box2"
+  "main main box1"
+  "main main box2"
 }
 
 /* Main */
 .main {
-  min-height: 500px;
-  background-image: url(/me.jpeg);
+  min-height: 800px;
+  background-image: url(me.jpeg);
+  background-size: cover;
   box-shadow: 2px 2px black;
   border: 2px solid black;
   background-size: cover;
@@ -93,6 +94,7 @@ body {
 .about-text {
   text-align: center;
   color: black;
+  font-size: 26px;
 }
 
 /*Box */
@@ -118,11 +120,13 @@ body {
   margin: 2px;
   font-family: arial;
   text-shadow: 2px 2px black;
+  font-size: 32px;
+  text-align: center;
 }
 
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .container {
       grid-template-areas:
         'main'
